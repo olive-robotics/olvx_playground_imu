@@ -16,7 +16,7 @@ class AppNode(Node):
         
         self.subscription = self.create_subscription(
             Imu,
-            '/olive/one/imu',
+            '/olive/imu/id001/filtered_imu',
             self.listener_callback,
             1)
         
