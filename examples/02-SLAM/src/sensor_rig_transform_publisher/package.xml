@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>sensor_rig_transform_publisher</name>
+  <version>0.0.1</version>
+  <description>
+    A package that broadcasts multiple static transforms from a YAML file.
+  </description>
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <author email="you@example.com">Your Name</author>
+
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
+  
+  <!-- Because we are using Python, we also need rclpy -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

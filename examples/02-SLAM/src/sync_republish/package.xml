@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>sync_republish_cpp</name>
+  <version>0.0.0</version>
+  <description>
+    A package that synchronizes odom and scan messages, republishes them with a common timestamp,
+    and publishes a TF transform from the odom frame to the scan frame using the odom pose.
+  </description>
+  <maintainer email="your.email@example.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>message_filters</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
