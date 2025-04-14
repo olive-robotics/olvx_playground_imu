@@ -6,8 +6,10 @@ As LiDAR the RPLIDAR S2E from Slamtec is used.
 
 The used packages are `robot_locatization` to fuse the IMU and LiDAR with the extended kalman filter, `rf2o` to get odometry based on LiDAR, `slam_toolbox` as slam framework and some own written nodes to sync the sensors and publish the transforms.
 
-<img src="./images/slam_demo.gif" alt="rig_front" width="800"/>
 
+<img src="./images/slam_demo.gif" alt="slam_demo" width="800"/>   
+
+<img src="./images/rig_demo.gif" alt="rig_demo" width="400"/>
 
 ## Dependencies
 - `ROS 2 Humble`: The Humble Distro of ROS 2
