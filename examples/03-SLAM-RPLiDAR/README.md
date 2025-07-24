@@ -11,6 +11,18 @@ The used packages are `robot_locatization` to fuse the IMU and LiDAR with the ex
 <img src="./images/rig_demo.gif" alt="rig_demo" width="400"/>
 </p>
 
+## Table of Contents
+<!-- TOC -->
+* [Olive SLAM with IMU and LiDAR](#olive-slam-with-imu-and-lidar)
+  * [Table of Contents](#table-of-contents)
+  * [Dependencies](#dependencies)
+  * [Getting Started](#getting-started)
+    * [Installation & Setup](#installation--setup)
+    * [Setup the sensor rig](#setup-the-sensor-rig)
+    * [Start the demo](#start-the-demo)
+  * [References](#references)
+<!-- TOC -->
+
 ## Dependencies
 - `ROS 2 Humble`: The Humble Distro of ROS 2
 - `colcon`: To build the ROS 2 packages, colcon is needed and can be installed with `sudo apt install python3-colcon-common-extensions`
