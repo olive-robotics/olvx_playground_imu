@@ -5,18 +5,22 @@ from std_msgs.msg import String
 from sensor_msgs.msg import Imu
 from geometry_msgs.msg import Vector3
 
+# CONFIG
+SUBSCRIPTION_TOPIC = '/olive/imu/id001/filtered_imu'
+PUBLISHING_TOPIC = '/olive/app/shake_detection'
+
 class AppNode(Node):
 
     def __init__(self):
         super().__init__('app_node')
-        self.publisher_ = self.create_publisher(String, '/olive/app/shake_detection', 1)
+        self.publisher_ = self.create_publisher(String, PUBLISHING_TOPIC, 1)
         
         timer_period = 0.1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         
         self.subscription = self.create_subscription(
             Imu,
-            '/olive/imu/id001/filtered_imu',
+            SUBSCRIPTION_TOPIC,
             self.listener_callback,
             1)
         

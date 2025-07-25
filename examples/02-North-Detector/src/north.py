@@ -3,12 +3,15 @@ from rclpy.node import Node
 from sensor_msgs.msg import MagneticField
 import math
 
+# CONFIG
+SUBSCRIPTION_TOPIC = '/olive/imu/id001/magneticfield'
+
 class MagnetometerNode(Node):
     def __init__(self):
         super().__init__('magnetometer_node')
         self.subscription = self.create_subscription(
             MagneticField,
-            '/olive/imu/id001/magneticfield',
+            SUBSCRIPTION_TOPIC,
             self.magnetometer_callback,
             10)
         self.subscription  # prevent unused variable warning
