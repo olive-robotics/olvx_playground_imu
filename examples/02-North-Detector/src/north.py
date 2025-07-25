@@ -8,10 +8,11 @@ class MagnetometerNode(Node):
         super().__init__('magnetometer_node')
         self.subscription = self.create_subscription(
             MagneticField,
-            '/olive/imu/id001/magnetometer',
+            '/olive/imu/id001/magneticfield',
             self.magnetometer_callback,
             10)
         self.subscription  # prevent unused variable warning
+        self.get_logger().info("North Detector Active")
 
     def magnetometer_callback(self, msg):
         # Calculate heading from magnetometer x and y data
@@ -32,7 +33,7 @@ class MagnetometerNode(Node):
             heading_deg -= 360
 
         # Print heading
-        self.get_logger().info('Heading: ' + str(heading_deg) + ' deg')
+        self.get_logger().info(f"Heading: {heading_deg:.2f} deg")
 
 def main(args=None):
     rclpy.init(args=args)
