@@ -52,7 +52,7 @@ Read More: [README.md](examples/03-SLAM-RPLiDAR/README.md)
 
 Power a 3D LiDAR sensor using your IMU's directional functionality.
 
-![fast_lio_example.png](examples/04-SLAM-LivoxLiDAR/media/fast_lio_example.png)
+![fast_lio_example.png](examples/04-SLAM-LivoxLiDAR/media/olive_imu.gif)
 
 Read More: [README.md](examples/04-SLAM-LivoxLiDAR/README.md)
 
