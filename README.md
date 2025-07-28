@@ -28,10 +28,14 @@ IMU (Inertial Measurement Unit)](https://olive-robotics.com/olixsense-imu-x1/).
 ## Examples
 ### Shake Detector
 
+![media/olive_imu_shake.png](media/olive_imu_shake.png)
+
 Quickly and easily determine shaking or vibration using your Olive IMU.
 
 Read More: [README.md](examples/01-Shake-Detector/README.md)
 ### North Detector
+
+![media/olive_imu_compass.png](media/olive_imu_compass.png)
 
 Find true north using the built-in magnetometer. 
 
